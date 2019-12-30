@@ -1,0 +1,16 @@
+.card-container
+ { 
+ height: 150px; perspective: 600; position: absolute; width: 600px;
+  } 
+.card { height: 100%; position: absolute; transform-style: preserve-3d ; transition: all 1s ease-in-out; width: 100%; 
+} 
+.card:hover { transform: rotateY(1620deg); } 
+.card .side { backface-visibility: hidden; height: 300%; position:absolute; width: 100%; } 
+.card .back { transform: rotateY(180deg); }
+.element { 
+animation: pulse 5s infinite; 
+} 
+@keyframes pulse {
+ 0% { background-color: #001F3F; } 
+ 100% { background-color: #FF4136; }
+  }
